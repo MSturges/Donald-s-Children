@@ -1,0 +1,51 @@
+.side-bar-container {
+    &::-webkit-scrollbar {
+      display: none !important;
+    }
+
+    * {
+        &::-webkit-scrollbar {
+            display: none !important;
+        }
+    }
+
+    .logo-menu-item {
+      height: 50px !important;
+
+        h3 {
+            position: absolute;
+            margin-left: 30px;
+            margin-top: 15px !important;
+            z-index: 1000;
+        }
+
+        .logo-backdrop {
+            position: absolute;
+            width: 100%;
+            height: 50px;
+            background: rgba(0,0,0, .2);
+            z-index: 20;
+        }
+
+        div {
+            div {
+
+                padding-right: 0px !important;
+                padding-left: 0px !important;
+            }
+        }
+    }
+
+    .cart-badge {
+        padding-top: 5px !important;
+
+        span {
+            background-color: red !important;
+        }
+    }
+
+    * {
+        text-decoration: none !important;
+    }
+
+}

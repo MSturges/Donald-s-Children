@@ -1,0 +1,9 @@
+.top-bar-container {
+    display: none;
+
+    @media (max-width: 1012px) {
+        & {
+            display: block;
+        }
+     }
+}
