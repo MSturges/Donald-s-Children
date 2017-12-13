@@ -3,6 +3,10 @@ const WebpackNotifierPlugin = require('webpack-notifier');
 const commonConfig = require('./webpack.common.js');
 const helpers = require('../helpers');
 
+// historyApiFallback: true,
+// whenever in a nested route for callbacks and we refresh
+// the page we are making sure to resend the index.html
+
 module.exports = webpackMerge(commonConfig, {
     devtool: 'source-map',
     entry: {

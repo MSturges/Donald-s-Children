@@ -73,7 +73,8 @@ const gatherPoloniexDataAndInsert = () => {
         }
       };
 
-      Promise.all(promiseArray).then((insertRes) => {
+      Promise.all(promiseArray)
+      .then((insertRes) => {
         resolve(insertRes);
       }).catch((insertErr) => {
         reject(insertErr);
